@@ -1,0 +1,48 @@
+.gradient-background {
+    padding: 5px;
+    background: linear-gradient(300deg, #87bee1, #5dacde, #cbcfd2);
+    background-size: 180% 180%;
+    animation: gradient-animation 13s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .list-group-item, .nav-link {
+    color: #0d527d;
+  }
+/* 
+  .nav-link {
+    color: #0d527d;
+  } */
+
+  .nav-link {
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1.5px;
+    background-color: #0d527d;
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link:active::after,
+  .nav-link:focus::after {
+    width: 100%;
+  }
+  
