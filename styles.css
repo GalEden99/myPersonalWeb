@@ -16,14 +16,12 @@
       background-position: 0% 50%;
     }
   }
-
+  .nav-item{
+    cursor: pointer;
+  }
   .list-group-item, .nav-link {
     color: #0d527d;
   }
-/* 
-  .nav-link {
-    color: #0d527d;
-  } */
 
   .nav-link {
     position: relative;
@@ -36,7 +34,7 @@
     left: 0;
     width: 0;
     height: 1.5px;
-    background-color: #0d527d;
+    background-color: rgb(13, 82, 125);
     transition: width 0.3s ease;
   }
   
@@ -46,3 +44,30 @@
     width: 100%;
   }
   
+
+  .projects h2 {
+    color: #0d527d;
+  }
+  .rubik {
+    background-image: linear-gradient(rgb(255, 255, 255, 0.8), rgb(93, 172, 222, 0.7)),
+      url("./images/RubiksCube.png");
+    background-position: 0px -0.5px, 0px -50px;
+  }
+  .lena {
+    background-image: linear-gradient(rgb(203, 207, 210, 0.2), rgb(93, 172, 222, 0.7)),
+      url("./images/lenna.jpg");
+  }
+
+  .projects .card-button{
+    border: none;
+    background-color: transparent;
+  }
+
+  .projects .card-button:hover {
+    border: 3.5px solid #0d527d;
+    border-radius: 4%;
+    transition: 0.1s;
+  }
+
+
+
